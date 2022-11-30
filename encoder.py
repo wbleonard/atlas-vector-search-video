@@ -16,7 +16,8 @@ result_collection = mongo_client[params.database][params.collection]
 # Empty the collection (Don't delete it to preserve the Search index)
 result_collection.delete_many({})
 
-#Load CLIP model
+# Load CLIP model
+# https://huggingface.co/sentence-transformers/clip-ViT-L-14
 preTrainedModelName = "clip-ViT-L-14"
 model = SentenceTransformer(preTrainedModelName)
 

@@ -21,7 +21,7 @@ if args.query is None:
     print("-----------")
     print(query)
 
-
+# https://huggingface.co/sentence-transformers/clip-ViT-L-14
 preTrainedModelName = "clip-ViT-L-14"
 model = SentenceTransformer(preTrainedModelName)
 
