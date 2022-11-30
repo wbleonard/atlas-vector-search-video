@@ -10,7 +10,7 @@ Then, using an Atlas Vector Search index, we demonstrate how the video library c
 
 ## Setup
 ### Videos to Query
-For this demo, the image extractor opens the videos from a local directory. To get started, I've supplied 6 sample videos that I downloaded from [Pexels](https://www.pexels.com/videos/}), They're pretty short and simple videos, so please try with your own.
+For this demo, the image extractor opens the videos from a local directory. To get started, I've supplied five sample videos that I downloaded from [Pexels](https://www.pexels.com/videos/). They're short and simple videos, so please try with your own.
 
 ### Atlas
 Open [params.py](params.py) and configure your connection to Atlas, along with the name of the database and collection you'd like to store your text. 
