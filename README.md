@@ -14,7 +14,7 @@ For this demo, the image extractor opens the videos from a local directory. To g
 
 ### Atlas
 Open [params.py](params.py) and configure your connection to Atlas, along with the name of the database and collection you'd like to store your text. 
-### Extract and Encode the videos
+### Extract and Encode the videos 
 Install the requirements. This implementation uses:
 * [opencv-python](https://pypi.org/project/opencv-python/) Python library for frame extraction
 * Hugging Face [sentence-transformers/clip-ViT-L-14](https://huggingface.co/sentence-transformers/clip-ViT-L-14) pre-trained model for the dense vector mapping of the extracted video frames.
