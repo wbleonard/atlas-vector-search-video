@@ -1,8 +1,8 @@
 # Atlas Vector Search Across Videos
 ## Introduction
-This demo is a prototype of how Atlas Vector Search could be used to find videos with relevent content - requiring that no descriptive metadata be stored along with the videos.  
+This demo is a prototype of how Atlas Vector Search could be used to find videos with relevant content - requiring that no descriptive metadata be stored along with the videos.  
 
-To begin, image stills are extracted from the videos at a configurable number of seconds. The images (frames) are then encoded into a 768 dimensional dense vector space. The vector, along with the name of the video are stored into MongoDB Atlas. For the purpose of this demo, no other descriptive meta data about the video is stored. 
+To begin, image stills are extracted from the videos at a configurable number of seconds. The images (frames) are then encoded into a 768 dimensional dense vector space. The vector, along with the name of the video, are stored into MongoDB Atlas. For the purpose of this demo, no other descriptive metadata about the video is stored. 
 
 Then, using an Atlas Vector Search index, we demonstrate how the video library can be queried for content. The results include the name of the video and the second marker where the queried content was found.
 
@@ -17,7 +17,7 @@ Open [params.py](params.py) and configure your connection to Atlas, along with t
 ### Extract and Encode the PDFs
 Install the requirements. This implementation uses:
 * [opencv-python](https://pypi.org/project/opencv-python/) Python library for frame extraction
-* Hugging Face [sentence-transformers/clip-ViT-L-14](https://huggingface.co/sentence-transformers/clip-ViT-L-14) pretrained model for the dense vector mapping of the extrated video frames.
+* Hugging Face [sentence-transformers/clip-ViT-L-14](https://huggingface.co/sentence-transformers/clip-ViT-L-14) pre-trained model for the dense vector mapping of the extracted video frames.
 * [pymongo](https://pypi.org/project/pymongo/) - the Python driver for MongoDB
 
 ```zsh
