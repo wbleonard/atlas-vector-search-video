@@ -39,10 +39,10 @@ def vectorize(frames):
                 "videoFile": f['videoname'],
                 "second": f['videosec'],
                 "frame": f['videoframe'],       
-                "imageVector": encoded
+                "frameVector": encoded
             }
             result_collection.insert_one(image)
-            print(f['filename'])
+            print(' -', f['filename'])
 
 vectorize(frames)
 
